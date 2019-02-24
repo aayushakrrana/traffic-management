@@ -11,66 +11,106 @@
         
         <style>
             #id1{
-                
-                                background: url(lol.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;}
+                    background: url(lol.jpg);
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
             #id2{
                 background-color: rgb(184, 181, 36)
             }
             #id3{
                 background-color: rgb(119, 221, 98)
             }
+			.button5 {border-radius: 50%;}
+			.button {
+				  background-color: #4CAF50;
+				  border: none;
+				  color: white;
+				  padding: 9px;
+				  text-align: center;
+				  text-decoration: none;
+				  display: inline-block;
+				  font-size: 6px;
+				  margin: 4px 2px;
+				}
+				h1{
+				font-family: "courier";
+				}
+		
         </style>
     </head>
     
     <body id="id1">
         <div class="container">
             <div class="row" >
-                <h1 style="font-size: 36px; color: #d67d0f">TRAFFIC MANAGEMENT</h1>
+                <h1 style="font-size: 36px; color: #f90000" align="center"> <b> TRAFFIC MANAGEMENT </b> </h1>
                 
             </div>
-        
+			<br>
             <div class="row" >
-                <div class="col-md-6" style="background-color: rgb(208, 211, 192);padding:50px;">
+                <div class="col-md-7" style="background-color: rgb(234, 234, 234);  box-shadow: 1px 0px 20px 1px black; opacity:0.85; padding:5px;">
                     <div class="row"></div> 
                     
-	<div class="Holder">
-		<div class="Element">
-			<input name="get_location" type="submit" class="button" id="get_location" value="Get My Location">
-		</div>
-	<div class="Element">
-	<div id="map">
-	<iframe id="google_map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com?output=embed"></iframe>
-</div>
-</div>
-</div>
+				<div class="Holder">
+					<div class="Element">
+					<br>
+					<center>
+						<input name="get_location" type="submit" id="get_location" style="padding:7px" value="Get My Location">
+					</center>
+					
+					</div>
+					<div class="Element">
+						<div id="map">
+						<iframe style="background-color: rgb(234, 234, 234);  padding:30px;" id="google_map" width="650" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com?output=embed"></iframe>
+						</div>
+					</div>
+				</div>
 
                 </div>
-                <div class="col-md-6" style="background-color: rgb(234, 234, 234);width: 50%;    box-shadow: 1px 0px 20px 1px black; opacity:.65 ;
+				<div class="col-md-1"></div>
+                <div class="col-md-4" style="background-color: rgb(234, 234, 234);    box-shadow: 1px 0px 20px 1px black; opacity:.65 ;
             }
             
             ">
                     <br><br>
-                    <div class="row" >  
-                        <div class="col-md-12">
+                    <div class="row" > 
+						<div class="col-md-2">
+						</div>
+                        <div class="col-md-8">
                         <p id="demo"></p>
                         
-                        <br><br>
-                        <form  action="" class="form-inline" style="font-size: 22px">
-                            <input id="id2" type="radio" value="high" name="status"> High Traffic
-                            <br> <br> <br>
-                            <input id="id2" type="radio" value="moderate" name="status" >Moderate Traffic 
-                            <br> <br> <br>
-                            <input id="id2" type="radio" value="light" name="status" >Light Traffic 
-                            <br> <br> <br>
-                            <input id="id2" type="radio" value="smooth" name="status" >Smooth Traffic 
+                        <br>
+                        <form  action="heavy.html" class="form-inline" style="font-size: 22px">
+                                
+						<a href="heavy.html">	
+							<button class="button button5"></button></a>
+						
+							High Traffic <br> <br> <br>
                         </form>
-                        <br><br> 
+						<form  action="moderate.html" class="form-inline" style="font-size: 22px">
+						<a href="heavy.html">	
+							<button class="button button5"></button></a>
+						
+							Moderate Traffic <br> <br> <br>
+						
+						</form>
+						<form  action="light.html" class="form-inline" style="font-size: 22px">						
+						<a href="heavy.html">	
+							<button class="button button5"></button></a>
+						
+							Light Traffic <br> <br> <br>
+						</form>
+						<form  action="smooth.html" class="form-inline" style="font-size: 22px">	
+						<a href="heavy.html">	
+							<button class="button button5"></button></a>
+						
+							Smooth Traffic <br> <br> <br>
+            
+                        </form>
                         
-                        <br><br>
-                    </div>
-                        
+						</div>
+                        <div class="col-md-2">
+						</div>
                     </div>
                 </div>
             </div>
